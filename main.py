@@ -12,7 +12,6 @@ import tornado.options
 import tornado.web
 import tornado.websocket
 from tornado.options import define, options
-from pymodm import connect
 
 define("port", default=9090, help="run on the given port", type=int)
 
