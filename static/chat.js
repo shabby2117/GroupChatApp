@@ -44,7 +44,7 @@ var updater = {
     //socket = new WebSocket(url);
 
     start: function() {
-        var url = "https://" + location.host + "/chatsocket";
+        var url = "ws://" + location.host + "/chatsocket";
         updater.socket = new WebSocket(url);
 
         updater.socket.onmessage = function(event) {
