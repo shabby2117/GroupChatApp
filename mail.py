@@ -36,7 +36,7 @@ def send_mail_to(destination,obj_id):
         mailserver = smtplib.SMTP_SSL('smtp.googlemail.com',465)
         try:
             mailserver.login('m.techcsenith@gmail.com', 'm.techcse')
-            mailserver .sendmail(me, you, msg.as_string())
+            mailserver.sendmail(me, you, msg.as_string())
         finally:
             mailserver .quit()
     except Exception as exc:
