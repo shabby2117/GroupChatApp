@@ -222,10 +222,11 @@ class MainHandler(BaseHandler):
 
 
 def main():
-    print("\n\tsever starts default at ds227199.mlab.com:27199")
+    print("\n\tsever starts default at localhost:9090")
     tornado.options.parse_command_line()
     app = Application()
-    app.listen(options.port)
+    port = 9090
+    app.listen(port)
     tornado.ioloop.IOLoop.instance().start()
 
 
