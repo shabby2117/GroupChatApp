@@ -34,9 +34,8 @@ def send_mail_to(destination,obj_id):
         part2 = MIMEText(html, 'html')
         msg.attach(part2)
         mailserver = smtplib.SMTP_SSL('smtp.googlemail.com',465)
-        mailserver.ehlo()
-        mailserver.login('m.techcsenith@gmail.com', 'm.techcse')
         try:
+            mailserver.login('m.techcsenith@gmail.com', 'm.techcse')
             mailserver .sendmail(me, you, msg.as_string())
         finally:
             mailserver .quit()
