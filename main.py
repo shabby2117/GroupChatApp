@@ -26,9 +26,9 @@ DB_PASS = 'group1234'
 class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
-            (r"/", MainHandler),
-            (r"/chatsocket", ChatSocketHandler),
+            #(r"/", MainHandler),
             (r'/login', LoginHandler),
+            (r"/chatsocket", ChatSocketHandler),
             (r'/logout', LogoutHandler),
             (r'/signup', SignUpHandler),
             (r'/confirmation/([^/]+)', ConfirmationHandler),
