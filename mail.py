@@ -35,7 +35,7 @@ def send_mail_to(destination,obj_id):
         msg.attach(part2)
         mailserver = smtplib.SMTP_SSL('smtp.googlemail.com',465)
         try:
-            mailserver.login('m.techcsenith@gmail.com', 'm.techcse')
+            mailserver.login('groupchat2018@gmail.com', 'groupchat@2018')
             mailserver.sendmail(me, you, msg.as_string())
         finally:
             mailserver .quit()
