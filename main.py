@@ -224,8 +224,8 @@ class MainHandler(BaseHandler):
 def main():
     print("\n\tsever starts default at localhost:9090")
     tornado.options.parse_command_line()
-    app = Application()
-    port = 9090
+    app = torando.httpserver.HTTPServer(Application())
+    port = int(os.environ.get("PORT",9090))
     app.listen(port)
     tornado.ioloop.IOLoop.instance().start()
 
