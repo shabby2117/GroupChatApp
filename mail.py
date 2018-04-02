@@ -10,7 +10,7 @@ def send_mail_to(destination,obj_id):
    
     me = "shubhamsaurabh2117@gmail.com"
     you = destination
-    link = "https:groupchatapp20.herokuapp.com/confirmation/{}".format(obj_id)
+    link = "https://groupchatapp20.herokuapp.com/confirmation/{}".format(obj_id)
 
 
     msg = MIMEMultipart('alternative')
