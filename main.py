@@ -194,7 +194,7 @@ class SignUpHandler(tornado.websocket.WebSocketHandler):
         for post in users.find():
            print(post)
         client.close()
-        self.finish("<html><body>A verfication mail is sent to your mail <a href=email ></body></html>")
+        self.finish("<html><body>A verfication mail is sent to your mail, Please Verify! <a href=email ></body></html>")
 
 
 class ConfirmationHandler(tornado.websocket.WebSocketHandler):
